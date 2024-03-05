@@ -1215,7 +1215,7 @@ Resources:
       VPCSecurityGroups:
       - Ref: RDSSecurityGroup
       Engine: MySQL
-      EngineVersion: 5.5.54
+      EngineVersion: 5.7.44
       MasterUsername: teamcity
       MasterUserPassword: !Ref 'DBPassword'
       DBParameterGroupName: !Ref 'RDSParamGroup'
@@ -1237,7 +1237,7 @@ Resources:
   RDSParamGroup:
     Type: AWS::RDS::DBParameterGroup
     Properties:
-      Family: MySQL5.5
+      Family: MySQL5.7
       Description: !Sub TeamCity ${AWS::StackName} DB
       Parameters:
         long_query_time: "5"
