@@ -1216,6 +1216,7 @@ Resources:
       - Ref: RDSSecurityGroup
       Engine: MySQL
       EngineVersion: 8.0.40
+      AllowMajorVersionUpgrade: true
       MasterUsername: teamcity
       MasterUserPassword: !Ref 'DBPassword'
       DBParameterGroupName: !Ref 'RDSParamGroup'
