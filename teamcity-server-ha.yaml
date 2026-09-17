@@ -1207,7 +1207,8 @@ Resources:
   RDSDB:
     Type: AWS::RDS::DBInstance
     Properties:
-      AllocatedStorage: '5'
+      AllocatedStorage: '20'
+      MaxAllocatedStorage: 100
       DBInstanceClass: !Ref 'DBInstanceType'
       DBInstanceIdentifier: !Sub TeamCity-${AWS::StackName}
       DBName: 'teamcitydb'
