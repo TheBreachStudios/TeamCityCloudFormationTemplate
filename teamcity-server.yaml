@@ -832,8 +832,8 @@ Resources:
         long_query_time: "5"
         slow_query_log: "1"
         innodb_flush_log_at_trx_commit: "2"
-        character_set_server: "utf8"
-        collation_server: "utf8_bin"
+        character_set_server: "utf8mb4"
+        collation_server: "utf8mb4_0900_bin"
         max_allowed_packet: "16777216"
 
   RDSSubnetGroup:
